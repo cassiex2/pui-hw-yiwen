@@ -2,4 +2,4 @@
 
 Deployed website: `cassiex2.github.io/pui-hw-yiwen/`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/cassiex2/pui-hw-yiwen`
