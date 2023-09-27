@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+ 
+  <title> BunBun bake shop</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <body>
+
+    <header>
+      <a href="gallary.html">
+        <img id="shop-logo" src="../assets/logo/logo-01.svg" alt="shop-logo">
+      </a>
+      <div class="header-menu">
+        <div class="menu-list">
+          <a href="gallary.html">PRODUCTS</a>
+          <a href="cart.html">CARTS</a>
+        </div>
+
+        <hr>
+
+        <h2 id="detail-roll-text">Original cinnamon roll</h2>
+
+      </div>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <img id="product-image" src="">
+
+            <div class="detail-content">
+                <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
+                <div class="glazing">
+                    <label for="original-cinnamon">Glazing:</label>
+                    <select name="bake" id="cinnamon-roll-price" onchange="priceChange()">
+                    </select>
+                </div>
+
+                <div class="pack-size">
+                    <label for="roll-pack-size">Pack size:</label>
+                    <select name="packsize" id="roll-pack-size" onchange="priceChange()">
+                    </select>
+                </div>
+
+                <div class="price-cart">
+                    <div class="price" id="total-price"></div>
+                    <div class="cart">
+                      <button class="add-btn">Add to Cart</button>
+                    </div>
+                  </div>
+            </div>
+            
+
+
+        </div>
+
+      
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/rollsData.js"></script>
+
+  </body>
+</html>
+
+
