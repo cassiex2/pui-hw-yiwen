@@ -38,7 +38,7 @@ headerElement.innerText = chosenRoll + ' cinnamon roll'
 
 // Update the image
 const rollImage = document.querySelector('#product-image');
-rollImage.src = '../assets/products/' + chosenRoll.toLowerCase() + '-cinnamon-roll.jpg';
+rollImage.src = '../assets/products/' + chosenRoll + '-cinnamon-roll.jpg';
 
 // Update the price
 let basePrice = rolls[chosenRoll]['basePrice'];
