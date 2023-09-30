@@ -1,6 +1,6 @@
 // glazing option object
 const glazingOptions = [
-    {option: "Keep Original", price: 0},
+    {option: "Keep original", price: 0},
     {option: "Sugar milk", price: 0},
     {option: "Vanilla milk", price: 0.5},
     {option: "Double chocolate", price: 1.5}
