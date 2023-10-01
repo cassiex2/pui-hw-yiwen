@@ -55,7 +55,7 @@ const chosenRoll = params.get('roll')
 
 // Update the header text
 const headerElement = document.querySelector('#detail-roll-text');
-headerElement.innerText = chosenRoll + ' cinnamon roll'
+headerElement.innerText = chosenRoll + ' Cinnamon Roll'
 
 // Update the image
 const rollImage = document.querySelector('#product-image');
