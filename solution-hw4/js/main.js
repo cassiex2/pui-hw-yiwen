@@ -110,9 +110,9 @@ class Roll {
 }
 
 let addToCart = document.querySelector('.add-btn');
-addToCart.addEventListener("click", myFunction);
+addToCart.addEventListener("click", btnFunction);
 
-function myFunction() {
+function btnFunction() {
     const glazingValue = document.getElementById('cinnamon-roll-price').value;
     const packValue = document.getElementById('roll-pack-size').value; 
 
