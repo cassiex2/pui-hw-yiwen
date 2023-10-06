@@ -235,10 +235,11 @@ header {
     flex-direction: column;
     align-items: end;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .cart-item a {
-    margin-right: 37.6rem;
+    margin-right: 37rem;
     margin-bottom: 0;
     color: black;
     font-weight: bold;
@@ -255,7 +256,7 @@ header {
     display: flex;
     flex-direction: row;
     font-size: 22px;
-    width: 450px;
+    width: 460px;
     justify-content: space-between;
     margin-left: 13rem;
     margin-bottom: 15px;
@@ -263,6 +264,7 @@ header {
 
 .price-checkout {
     float: right;
+    margin-bottom: 2rem;
 }
 .checkout-btn {
     margin-left: 30rem;

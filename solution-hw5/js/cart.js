@@ -128,7 +128,7 @@ function calculateTotalPrice(cart) {
     for (i = 0; i < cart.length; i++) {
         totalcartprice = totalcartprice + parseFloat(cart[i]["totalPrice"]);
     }
-    return totalcartprice;
+    return totalcartprice.toFixed(2);
 
 }
 
