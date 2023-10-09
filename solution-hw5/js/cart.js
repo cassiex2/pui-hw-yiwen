@@ -43,7 +43,6 @@ function calculatePrice(roll) {
     for (i=0; i < glazingOptions.length; i++) {
         if (roll.glazing ===  glazingOptions[i].option) {
             glazingPrice = glazingOptions[i].price;
-            console.log(glazingPrice);
         }
         
     }
