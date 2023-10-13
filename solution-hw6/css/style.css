@@ -1,0 +1,300 @@
+/* overall style */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+hr {
+    height:4px;
+    color:black;
+    background-color:black;
+    margin-left:0; 
+    margin-bottom: 4rem;
+}
+
+/* header style */
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#shop-logo {
+    width: 400px;
+    margin-left: 3vw;
+}
+
+.header-menu {
+    width: 900px;
+    margin-left: 2vw;
+    margin-top: 2rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: end;
+    margin-bottom: 2em;
+    margin-right: 4em;
+    font-size: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu-list a:hover {
+    background-color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* main menu */
+
+.menu-row {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.item-image img {
+    width: 285px;
+    height: 285px;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.menu-item {
+    padding: 0px 5px 5px 5px;
+    width: 290px;
+    
+}
+
+.menu-item:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.menu-item a {
+    display: block;
+    font-size: 21px;
+    width: 285px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#ori-roll, #app-roll, #rai-roll, #wal-roll, #dch-roll, #str-roll {
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.price {
+    font-size: 20px;
+}
+
+
+/*  Product Details */
+
+.product-detail {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+    gap: 65px;
+}
+
+#product-image {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    border: 3px solid black;
+}
+
+.detail-content p{
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 4rem;
+    width: 340px;
+}
+
+.glazing, .pack-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:start;
+    position: relative;
+    font-size: 23px;
+    margin-bottom: 2rem;
+}
+
+.glazing label, .pack-size label {
+    margin-bottom: 15px;
+}
+
+#cinnamon-roll-price, #roll-pack-size {
+    background-color: white;
+    border: 2.5px solid black;
+    padding: 4px 25px;
+    font-size: 23px;
+    width: 330px;
+    height: 50px;
+}
+
+.price-cart {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:start;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    gap: 25px;
+    width: 330px;
+}
+
+.price {
+    width: 90px;
+}
+
+.add-btn, .checkout-btn {
+    border: 2.5px solid black;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+}
+
+.add-btn:hover, .checkout-btn:hover {
+    background-color: yellow;
+}
+
+
+/* Shopping Cart */
+
+.cart-review {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.cart-item-detail img {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    border: 3px solid black;
+}
+
+.cart-item-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    width: 680px;
+    margin-bottom: 15px;
+}
+
+.cart-roll-type, .cart-roll-glazing, .cart-roll-glazing {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 320px;
+
+}
+
+.cart-item-price{
+    font-size: 22px;
+    width: 100px;
+    text-align: end;
+}
+
+.cart-item {
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.cart-item a {
+    margin-right: 37rem;
+    margin-bottom: 0;
+    color: black;
+    font-weight: bold;
+}
+
+#cart-divider {
+    width: 740px;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    width: 460px;
+    justify-content: space-between;
+    margin-left: 13rem;
+    margin-bottom: 15px;
+}
+
+.price-checkout {
+    float: right;
+    margin-bottom: 2rem;
+}
+.checkout-btn {
+    margin-left: 30rem;
+}
+
+
+
+
+/* arrow style */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select {
+
+    /* the arrow style was adopted from: https://codepen.io/vkjgr/pen/VYMeXp */
+    
+    background-image:
+      linear-gradient(45deg, transparent 50%, black 50%),
+      linear-gradient(135deg, black 50%, transparent 50%);
+      background-position:
+      calc(100% - 18px) calc(1em - 5px),
+      calc(100% - 10px) calc(1em - 5px),
+      100% 0;
+    background-size:
+      9px 8px,
+      8px 9px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+
+  }

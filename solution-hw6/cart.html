@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+ 
+  <title> BunBun bake shop</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <body>
+
+    <header>
+      <a href="gallary.html">
+        <img id="shop-logo" src="../assets/logo/logo-01.svg" alt="shop-logo">
+      </a>
+      <div class="header-menu">
+        <div class="menu-list">
+          <a href="gallary.html">PRODUCTS</a>
+          <a href="cart.html">CARTS</a>
+        </div>
+
+        <hr>
+
+        <h2>Our hand-made cinnamon rolls</h2>
+
+      </div>
+    </header>
+
+    <main id="roll-list">
+
+      <template id="roll-template">
+
+        <div class="cart-item">
+          <div class="cart-item-detail">
+              <img class="roll-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="cart-ori-roll">
+              <div class="cart-item-choice">
+                  <div class="cart-roll-type"> Cinnamon Roll</div>
+                  <div class="cart-roll-glazing">Glazing</div>
+                  <div class="cart-roll-pack">Pack Size</div>
+              </div>
+              <div class="cart-item-price">total price</div>
+          </div>
+
+          <div class="remove-btn"><a href="">Remove</a></div>
+      </div>
+
+      </template>
+
+    </main>
+
+    <div class="price-checkout">
+      <hr id="cart-divider">
+
+      <div class="total-price">
+        <p>Total</p>
+        <p id="total-cart-price">$</p>
+      </div>
+
+      <button class="checkout-btn">Checkout</button>
+
+    </div>
+
+    
+
+    <script src="./js/cart.js"></script>
+
+  </body>
+</html>
+
+
