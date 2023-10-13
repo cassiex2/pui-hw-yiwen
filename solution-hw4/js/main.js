@@ -51,18 +51,18 @@ const cart = [];
 //update Gallary page
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-const chosenRoll = params.get('roll')
+const rollType = params.get('roll')
 
 // Update the header text
 const headerElement = document.querySelector('#detail-roll-text');
-headerElement.innerText = chosenRoll + ' Cinnamon Roll'
+headerElement.innerText = rollType + ' Cinnamon Roll'
 
 // Update the image
 const rollImage = document.querySelector('#product-image');
-rollImage.src = '../assets/products/' + chosenRoll.toLowerCase() + '-cinnamon-roll.jpg';
+rollImage.src = '../assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.jpg';
 
 // Update the price
-let basePrice = rolls[chosenRoll]['basePrice'];
+let basePrice = rolls[rollType]['basePrice'];
 
 const totalPrice = document.querySelector('#cinnamon-roll-price');
 
@@ -100,8 +100,8 @@ priceChange();
 
 
 class Roll {
-    constructor(chosenRoll, rollGlazing, packSize, basePrice) {
-        this.type = chosenRoll;
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
@@ -116,7 +116,7 @@ function btnFunction() {
     const glazingValue = document.getElementById('cinnamon-roll-price').value;
     const packValue = document.getElementById('roll-pack-size').value; 
 
-    myRoll = new Roll(chosenRoll, glazingValue,packValue,basePrice);
+    myRoll = new Roll(rollType, glazingValue,packValue,basePrice);
     cart.push(myRoll)
     console.log(cart);
 }
