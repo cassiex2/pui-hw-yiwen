@@ -408,11 +408,11 @@ ul li .active .awesome {
 /* quiz */
 
 .trivia-quiz {
-    height: 88vh;
+    height: 80vh;
     margin-top: 5rem;
 }
 
-#quiz {
+#mickey-quiz {
     width: 700px;
     margin: auto;
 }
@@ -515,7 +515,7 @@ ul li .active .awesome {
 .back-to-top {
     text-align: right;
     margin: 0 8rem 0 0;
-    height: 15vh;
+    height: 20vh;
 }
 
 .back-to-top img {

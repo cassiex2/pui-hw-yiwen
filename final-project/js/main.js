@@ -52,9 +52,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // trivia quiz
 
-$('#quiz').quiz({
+$(document).ready(function() {
+
+  $('#quiz-start-btn').click();
+});
+
+
+// Mickey quiz
+$('#mickey-quiz').quiz({
     
     counterFormat: 'Question %current of %total',
+    resultsFormat: "Great job! You got %score out of %total correct!",
+    restartButtonText: 'Try Again',
     questions: [
       {
         'q': 'What color shoes does Mickey Mouse traditionally wear?',
