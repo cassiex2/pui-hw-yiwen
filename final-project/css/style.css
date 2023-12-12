@@ -407,9 +407,18 @@ ul li .active .awesome {
 
 /* quiz */
 
+.trivia-quiz {
+    height: 88vh;
+    margin-top: 5rem;
+}
+
 #quiz {
     width: 700px;
     margin: auto;
+}
+
+#quiz-counter,#quiz-header,#quiz-results-screen,#quiz-start-screen{
+    text-align:center
 }
 
 .question {
@@ -429,7 +438,9 @@ ul li .active .awesome {
     padding: 1em 1em;
     margin-bottom: 0.5em;
     font-size: 16px;
+    border-radius:10px;
     background: #fff;
+    text-decoration: none;
     color: black;
     font-family: 'Fira Code', monospace;
     transition: background-color 0.3s;
@@ -446,39 +457,73 @@ ul li .active .awesome {
 
 .answers a.incorrect{
     background:#fff;
-    border: red;
+    border: 3px solid #E7373C;
 }
 
 #quiz-controls {
-    background: #a6a6a6;
+    background:#E3D7B5;
     color: rgb(0, 0, 0);
-    padding: 0.25em 0.5em 0.5em;
+    padding: 1.25em 0.5em 1em 1.25em;
     text-align: center;
+    font-family: 'Fira Code', monospace;
+    border-radius:10px;
 }
 
 #quiz-results {
-    font-size: 1.5em;
-    font-family: 'Varela Round', sans-serif;
+    font-size: 2em;
+    margin-top: 5rem;
+    font-family: 'Fira Code', monospace;
+    text-align: center;
 }
 
 #quiz-start-btn {
     display: inline-block;
-    padding: 1em 2em;
-    background: rgb(190, 190, 190);
-    color: rgb(0, 0, 0);
+    padding: 0.8em 2em;
+    background: #111;
+    color: #fff;
     font-size: 18px;
     margin-top: 1.5rem;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Fira Code', monospace;
 }
 
-#quiz-buttons a,
-  .quiz-container .quiz-button {
+#quiz-buttons a,.quiz-container .quiz-button {
       display: inline-block;
-      padding: 0.3em 2em;
-      background: rgb(132, 132, 132);
-      color: rgb(0, 0, 0);
+      padding: 0.5em 2em;
+      background:#111;
+      color:#fff;
       font-size: 16px;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Fira Code', monospace;
       margin-top: 0;
-      border-radius: 5px;
-  }
+      border-radius: 8px;
+      
+}
+
+.quiz-results-state #quiz-controls{
+    background:0 0;
+    padding:0;
+    margin-top: 5rem;
+}
+
+.quiz-results-state #quiz-buttons a{
+    background:#333;
+    color:#fff}
+
+
+
+/* back to top button */
+
+.back-to-top {
+    text-align: right;
+    margin: 0 8rem 0 0;
+    height: 15vh;
+}
+
+.back-to-top img {
+    width: 84px;
+}
+
+.back-to-top a:hover {
+    width: 84px;
+    filter: brightness(1.8);
+}
+

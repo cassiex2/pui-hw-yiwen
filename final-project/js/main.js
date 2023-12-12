@@ -16,6 +16,8 @@ characters.forEach(character => {
 
 
 
+// Timeline slide-in annimation
+
 document.addEventListener('DOMContentLoaded', (event) => {
   window.addEventListener('scroll', animateTimelineItems);
 
@@ -48,42 +50,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-
-// const first = document.querySelector(".first");
-// const second = document.querySelector(".second");
-// const third = document.querySelector(".third");
-// const fourth = document.querySelector(".fourth");
-// const fifth = document.querySelector(".fifth");
-// const steps = [first, second, third, fourth, fifth];
-
-// function nextStep(currentStep) {
-//     steps.forEach(step => step.classList.remove("active"));
-
-//     steps.forEach((step, index) => {
-//         if (index <= currentStep) {
-//             step.classList.add("active");
-//         } else {
-//             step.classList.remove("active");
-//         }
-//     });
-// }
-
-// steps.forEach((step, index) => {
-//     step.addEventListener("click", () => {
-//         nextStep(index);
-//     });
-// });
-
-
-
-
 // trivia quiz
 
 $('#quiz').quiz({
     
-    //resultsScreen: '#results-screen',
-    //counter: false,
-    //homeButton: '#custom-home',
     counterFormat: 'Question %current of %total',
     questions: [
       {
@@ -95,20 +65,20 @@ $('#quiz').quiz({
           'Black'
         ],
         'correctIndex': 2,
-        'correctResponse': 'Great! You got this one right!',
-        'incorrectResponse': 'Oops, this is not the correct one.'
+        'correctResponse': 'Absolutely right! You must be a Disney expert!',
+        'incorrectResponse': 'Aww, that’s not it. But don’t worry, everyone learns! The correct answer is <strong>Yellow</strong>. '
       },
       {
         'q': 'Mickey made his first appearance in what short film?',
         'options': [
-          'Plane Crazy ',
+          'Plane Crazy',
           'The Gallopin’ Gaucho',
           'Steamboat Willieter',
           'The Barn Dance'
         ],
         'correctIndex': 0,
-        'correctResponse': 'Great! You got this one right!',
-        'incorrectResponse': 'Oops, this is not the correct one.'
+        'correctResponse': 'Absolutely right! You must be a Disney expert!',
+        'incorrectResponse': 'Aww, that’s not it. But don’t worry, everyone learns! The correct answer is <strong>Plane Crazy</strong>. '
       },
       {
         'q': 'What were Mickey’s first spoken word?',
@@ -119,8 +89,8 @@ $('#quiz').quiz({
           'Golly Gee Whilllakers!'
         ],
         'correctIndex': 1,
-        'correctResponse': 'Great! You got this one right!',
-        'incorrectResponse': 'Oops, this is not the correct one.'
+        'correctResponse': 'Absolutely right! You must be a Disney expert!',
+        'incorrectResponse': 'Aww, that’s not it. But don’t worry, everyone learns! The correct answer is <strong>Hot Dogs!</strong>. '
       },
       {
         'q': 'What is the name of Mickey’s sister?',
@@ -131,8 +101,8 @@ $('#quiz').quiz({
           'Doreen'
         ],
         'correctIndex': 0,
-        'correctResponse': 'Great! You got this one right!',
-        'incorrectResponse': 'Oops, this is not the correct one.'
+        'correctResponse': 'Absolutely right! You must be a Disney expert!',
+        'incorrectResponse': 'Aww, that’s not it. But don’t worry, everyone learns! The correct answer is <strong>Amelia</strong>. '
       },
       {
         'q': 'In what year did Mickey Mouse make his first comic strip appearance?',
@@ -143,8 +113,8 @@ $('#quiz').quiz({
           '1946'
         ],
         'correctIndex': 0,
-        'correctResponse': 'Great! You got this one right!',
-        'incorrectResponse': 'Oops, this is not the correct one.'
+        'correctResponse': 'Absolutely right! You must be a Disney expert!',
+        'incorrectResponse': 'Aww, that’s not it. But don’t worry, everyone learns! The correct answer is <strong>1930</strong>. '
       }
     ]
   });
