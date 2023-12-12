@@ -1,0 +1,484 @@
+/* Home Page Upper Part */
+
+.home-page-upper {
+    height: 880px;
+    background-color: rgba(17, 17, 17, 1);
+}
+
+.home-content h1 {
+    font-size: 120px;
+    text-align: end;
+    color: #F6EFD6;
+    line-height: 125px;
+    font-family: 'Gayathri', sans-serif;
+}
+
+.home-content {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 14rem;
+}
+
+.home-title {
+    margin-right: 8rem;
+}
+
+.home-title span {
+    color: #F3CC64;
+}
+
+#home-page-pic1 {
+    float: left;
+    position: relative;
+    top: -150px;
+    left: 140px;
+}
+
+svg {
+    float: left;
+    position: relative;
+    top: -80px;
+    left: 330px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+.home-content svg {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 5s; 
+    animation-fill-mode: forwards; 
+}
+
+.home-instruction p {
+    color: #F6EFD6;
+    margin-top: 60px;
+    margin-left: 330px;
+    font-family: 'Fira Code', monospace;
+}
+
+
+
+/* Home Page Bottom Part */
+
+.home-page-bottom {
+    height: 700px;
+    margin: 6rem 8rem 0 8rem;
+}
+
+.home-page-bottom h2 {
+    font-size: 80px;
+    font-family: 'Gayathri', sans-serif;
+}
+
+.home-characters {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    margin: 8rem 0 2rem 0;
+    font-family: 'Fira Code', monospace;
+}
+
+
+.mickey-button button, .daisy-button button, .goofy-button button{
+    border: none;
+    border-radius: 16px;
+    background-color: #111;
+    color: #F6EFD6;
+    font-size: 18px;
+    width: 180px;
+    padding: 8px 24px 8px 24px;   
+}
+
+.daisy-button button {
+    margin-top: 1.3rem;
+}
+
+.mickey-button button {
+    margin: 2rem 3rem 0 3rem;
+}
+
+.goofy-button button {
+    margin: 2rem 3rem 0 2.5rem;
+}
+
+.color-filter {
+    filter: grayscale(100%);
+}
+
+.color-filter:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.color-filter:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(-8deg);
+    transition: all 0.35s;
+}
+
+
+/* Hover state styles */
+
+.home-mickey, .home-daisy, .home-goofy {
+    position: relative; 
+  }
+
+.hover-effect-mickey button {
+    background-color: #E7373C;
+}
+
+.hover-effect-mickey::after, .hover-effect-daisy::after, .hover-effect-goofy::after {
+    content: 'Click to learn more about me';
+    color: #F6EFD6;
+    font-size: 14px;
+    width: 120px; 
+    height: 120px;
+    background-color: black; 
+    border-radius: 50%;
+    position: absolute;
+    top: -60px; 
+    right: -15px;
+    z-index: 10;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+.hover-effect-daisy button {
+    background-color: #785FAD;
+}
+
+.hover-effect-daisy::after {
+    content: 'Click to learn more about me';
+    color: #F6EFD6;
+    font-size: 14px;
+    width: 120px; 
+    height: 120px;
+    background-color: #FD86A6; 
+    border-radius: 50%;
+    position: absolute;
+    top: -60px; 
+    right: -65px;
+    z-index: 10;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+
+.hover-effect-goofy button {
+    background-color: #FF9600;
+}
+
+.hover-effect-goofy::after {
+    content: 'Click to learn more about me';
+    color: #F6EFD6;
+    font-size: 14px;
+    width: 120px; 
+    height: 120px;
+    background-color: black; 
+    border-radius: 50%;
+    position: absolute;
+    top: -60px; 
+    right: -35px;
+    z-index: 10;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+
+/* Timeline */
+main {
+    background-color: #F6EFD6;
+    height: auto;
+    
+}
+
+main h1 {
+    font-size: 70px;
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.back-button img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+
+.mickey-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 40px auto;
+    margin-top: 6rem;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px; 
+    display: flex;
+    justify-content: flex-end; 
+    padding-left: 50%;
+  }
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+    padding-right: 50%; 
+    padding-left: 0;
+}
+  
+.timeline-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #B20404; 
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    top: 50px;
+    z-index: 2;
+    opacity: 0; /* Start with the dot invisible */
+    transition: all 1s ease-out;
+}
+  
+.timeline-content {
+    width: 100%;
+    max-width: 550px; 
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    transition: opacity 8s ease-out, transform 10s ease-out;
+    opacity: 0; 
+    transform: translateX(-500px); /* Start position for left items */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    transform: translateX(500px); /* Start position for right items */
+}
+  
+.timeline-content img.timeline-image {
+    width: 100%;
+    max-width: 200px; 
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.timeline-content img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    height: 175px;
+    width: 135px;
+}
+
+.timeframe h2 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Gayathri', sans-serif;
+    background-color:#B20404;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+}
+
+.time-all {
+    width: 340px;
+}
+
+.time-all p {
+    font-family: 'Fira Code', monospace;
+    letter-spacing: -0.6px;
+    text-align: left;
+}
+  
+/* Animations */
+.js--fadeInLeft {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+  
+/* Add a line */
+.mickey-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background: black; 
+    z-index: 0;
+}
+  
+
+
+/* progress bar */
+
+.progress-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F6EFD6;
+    font-family: 'Fira Code', monospace;
+}
+
+.progress-bar ul {
+    display: flex;
+}
+
+.progress-bar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+ul li .step {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #E3D7B5;
+    margin: 20px 0 10px;
+    padding-top: 4px;
+    display: grid;
+    place-items: center;
+    color: ghostwhite;
+    position: relative;
+    cursor: pointer;
+}
+
+.step::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #E3D7B5;
+    right: 36px;
+}
+
+.first::after {
+    width: 0;
+    height: 0;
+}
+
+ul li .step .awesome {
+    display: none;
+}
+
+ul li .step p {
+    font-size: 18px;
+}
+
+ul li .active {
+    background-color: #F3CC64;
+}
+
+li .active::after {
+    background-color: #F3CC64;
+
+}
+
+ul li .active p {
+    display: none;
+}
+
+ul li .active .awesome {
+    display: flex;
+}
+
+
+/* quiz */
+
+#quiz {
+    width: 700px;
+    margin: auto;
+}
+
+.question {
+    margin-top: 2rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.answers a {
+    display: block;
+    padding: 1em 1em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    background: #fff;
+    color: black;
+    font-family: 'Fira Code', monospace;
+    transition: background-color 0.3s;
+}
+
+.answers a:hover {
+    background-color: #F3CC64;
+    color: black;
+}
+
+.answers a.correct{
+    background:#F3CC64;
+}
+
+.answers a.incorrect{
+    background:#fff;
+    border: red;
+}
+
+#quiz-controls {
+    background: #a6a6a6;
+    color: rgb(0, 0, 0);
+    padding: 0.25em 0.5em 0.5em;
+    text-align: center;
+}
+
+#quiz-results {
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#quiz-start-btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background: rgb(190, 190, 190);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#quiz-buttons a,
+  .quiz-container .quiz-button {
+      display: inline-block;
+      padding: 0.3em 2em;
+      background: rgb(132, 132, 132);
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-family: 'Varela Round', sans-serif;
+      margin-top: 0;
+      border-radius: 5px;
+  }
