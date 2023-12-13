@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading-bar.css"/>
 
     <!-- <link rel="stylesheet" type="text/css" href="../css/jquery.quiz-min.css" /> -->
 
@@ -58,7 +59,7 @@
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content js--fadeInLeft">
-                  <img src="../image/mickey-1930.png" alt="mickey-1920s">
+                  <img src="../image/mickey-1930.png" alt="mickey-1930s">
 
                   <div class="time-all">
                     <div class="timeframe">
@@ -75,7 +76,7 @@
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content js--fadeInLeft">
-                  <img src="../image/mickey-1940.png" alt="mickey-1920s">
+                  <img src="../image/mickey-1940.png" alt="mickey-1940s">
 
                   <div class="time-all">
                     <div class="timeframe">
@@ -92,7 +93,7 @@
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content js--fadeInLeft">
-                  <img src="../image/mickey-1950.png" alt="mickey-1920s">
+                  <img src="../image/mickey-1950.png" alt="mickey-1960s">
 
                   <div class="time-all">
                     <div class="timeframe">
@@ -109,7 +110,7 @@
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content js--fadeInLeft">
-                  <img src="../image/mickey-1980.png" alt="mickey-1920s">
+                  <img src="../image/mickey-1980.png" alt="mickey-1820s">
 
                   <div class="time-all">
                     <div class="timeframe">
@@ -126,7 +127,7 @@
                 <div class="timeline-img"></div>
           
                 <div class="timeline-content js--fadeInLeft">
-                  <img src="../image/mickey-2000.png" alt="mickey-1920s">
+                  <img src="../image/mickey-2000.png" alt="mickey-2000s">
 
                   <div class="time-all">
                     <div class="timeframe">
@@ -145,40 +146,20 @@
         <div class="trivia-quiz">
           <h1 id="trivia-title">It's trivia time</h1>
 
-          <div class="progress-bar">
-            <ul>
-              <li>
-                  <div class="step first">
-                      <p>1</p>
-                      <i class="awesome fa-solid fa-check"></i>
-                  </div>
-              </li>
-              <li>
-                  <div class="step second">
-                      <p>2</p>
-                      <i class="awesome fa-solid fa-check"></i>
-                  </div>
-              </li>
-              <li>
-                  <div class="step third">
-                      <p>3</p>
-                      <i class="awesome fa-solid fa-check"></i>
-                  </div>
-              </li>
-              <li>
-                  <div class="step fourth">
-                      <p>4</p>
-                      <i class="awesome fa-solid fa-check"></i>
-                  </div>
-              </li>
-              <li>
-                  <div class="step fifth">
-                      <p>5</p>
-                      <i class="awesome fa-solid fa-check"></i>
-                  </div>
-              </li>
-          </ul>
+          <div class="bar-container">
+            <div class="row">
+              <div class="col">
+                <ul id="progress-bar" class="progressbar">
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+               </ul>
+              </div>
+           </div>
           </div>
+
 
           <div id="mickey-quiz" class="trivia-quiz-questions">
             <div id="quiz-header">
@@ -203,6 +184,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="../js/loading-bar.js"></script>
     <script src="../js/jquery.quiz-min.js"></script>
     <script src="../js/main.js"></script>
   </body>

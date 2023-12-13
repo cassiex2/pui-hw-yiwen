@@ -215,7 +215,7 @@ main h1 {
     left: 3rem;
 }
 
-.mickey-timeline {
+.mickey-timeline, .daisy-timeline, .goofy-timeline {
     position: relative;
     width: 100%;
     max-width: 1200px; 
@@ -249,6 +249,10 @@ main h1 {
     z-index: 2;
     opacity: 0; /* Start with the dot invisible */
     transition: all 1s ease-out;
+}
+
+.daisy-timeline .timeline-img {
+    background-color:#785FAD;
 }
   
 .timeline-content {
@@ -295,6 +299,10 @@ main h1 {
     color: #fff;
 }
 
+.daisy-timeline .timeframe h2 {
+    background-color:#785FAD;
+}
+
 .time-all {
     width: 340px;
 }
@@ -313,7 +321,7 @@ main h1 {
 }
   
 /* Add a line */
-.mickey-timeline::before {
+.mickey-timeline::before, .daisy-timeline::before, .goofy-timeline::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -329,81 +337,66 @@ main h1 {
 
 /* progress bar */
 
-.progress-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#F6EFD6;
+.bar-container {
+    height: 10vh;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.progressbar {
+    margin: 50px 0 50px 0;
+    counter-reset: step;
+    overflow: auto;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 20%;
+    float: left;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    color: #7d7d7d;
     font-family: 'Fira Code', monospace;
 }
-
-.progress-bar ul {
-    display: flex;
-}
-
-.progress-bar ul li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 40px;
-}
-
-ul li .step {
-    height: 36px;
-    width: 36px;
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: '';
+    line-height: 30px;
+    border: 2px solid #E3D7B5;
+    background-color: #E3D7B5;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
     border-radius: 50%;
-    background-color: #E3D7B5;
-    margin: 20px 0 10px;
-    padding-top: 4px;
-    display: grid;
-    place-items: center;
-    color: ghostwhite;
-    position: relative;
-    cursor: pointer;
+    transition: all .8s;
 }
 
-.step::after {
-    content: "";
+.progressbar li:after {
+    width: 100%;
+    height: 8px;
+    content: '';
     position: absolute;
-    width: 80px;
-    height: 4px;
     background-color: #E3D7B5;
-    right: 36px;
+    top: 11px;
+    left: -39%;
+    z-index: 1;
+    transition: all .8s;
 }
-
-.first::after {
-    width: 0;
-    height: 0;
+.progressbar li:first-child:after {
+    content: none;
 }
-
-ul li .step .awesome {
-    display: none;
-}
-
-ul li .step p {
-    font-size: 18px;
-}
-
-ul li .active {
+.progressbar li.active:before {
+    border-color: #F3CC64;
     background-color: #F3CC64;
+    transition: all .8s;
 }
-
-li .active::after {
+.progressbar li.active:after {
     background-color: #F3CC64;
-
+    transition: all .8s;
 }
-
-ul li .active p {
-    display: none;
-}
-
-ul li .active .awesome {
-    display: flex;
-}
-
 
 /* quiz */
 
@@ -412,7 +405,7 @@ ul li .active .awesome {
     margin-top: 5rem;
 }
 
-#mickey-quiz {
+#mickey-quiz, #daisy-quiz, #goofy-quiz {
     width: 700px;
     margin: auto;
 }
@@ -515,7 +508,7 @@ ul li .active .awesome {
 .back-to-top {
     text-align: right;
     margin: 0 8rem 0 0;
-    height: 20vh;
+    height: 25vh;
 }
 
 .back-to-top img {
