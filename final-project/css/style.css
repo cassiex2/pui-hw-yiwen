@@ -365,7 +365,7 @@ main h1 {
     font-size: 18px;
     position: relative;
     text-align: center;
-    color: #7d7d7d;
+    color: #111;
     font-family: 'Fira Code', monospace;
 }
 .progressbar li:before {
