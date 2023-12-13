@@ -254,6 +254,10 @@ main h1 {
 .daisy-timeline .timeline-img {
     background-color:#785FAD;
 }
+
+.goofy-timeline .timeline-img {
+    background-color:#FF9600;
+}
   
 .timeline-content {
     width: 100%;
@@ -301,6 +305,10 @@ main h1 {
 
 .daisy-timeline .timeframe h2 {
     background-color:#785FAD;
+}
+
+.goofy-timeline .timeframe h2 {
+    background-color:#FF9600;
 }
 
 .time-all {
