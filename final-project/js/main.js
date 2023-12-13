@@ -4,7 +4,7 @@ const characters = document.querySelectorAll('.home-mickey, .home-daisy, .home-g
 
 characters.forEach(character => {
   character.addEventListener('mouseover', function() {
-    const characterClass = this.classList[0]; // Get the first class (e.g., 'home-mickey')
+    const characterClass = this.classList[0]; 
     this.classList.add(`hover-effect-${characterClass.split('-')[1]}`);
   });
 
