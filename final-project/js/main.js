@@ -1,4 +1,4 @@
-// Hover effect for characters 
+// Hover effect for characters - home page
 
 const characters = document.querySelectorAll('.home-mickey, .home-daisy, .home-goofy');
 
@@ -16,7 +16,7 @@ characters.forEach(character => {
 
 
 
-// Timeline slide-in annimation
+// Timeline slide-in annimation - character page
 
 document.addEventListener('DOMContentLoaded', (event) => {
   window.addEventListener('scroll', animateTimelineItems);
@@ -50,37 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-// progress bar
-var progressBar = {
-  Bar : $('#progress-bar'),
-  Reset : function(){
-    if (this.Bar){
-      this.Bar.find('li').removeClass('active'); 
-    }
-  },
-  Next: function(){
-    $('#progress-bar li:not(.active):first').addClass('active');
-  },
-  Back: function(){
-    $('#progress-bar li.active:last').removeClass('active');
-  }
-}
-
-progressBar.Reset();
-
-$("#Next").on('click', function(){
-  progressBar.Next();
-})
-$("#Back").on('click', function(){
-  progressBar.Back();
-})
-$("#Reset").on('click', function(){
-  progressBar.Reset();
-})
-
-
-
-// trivia quiz
+// Trivia quiz + Progress Bar - character page
 
 $(document).ready(function() {
 
@@ -193,6 +163,7 @@ $('#mickey-quiz').quiz({
   });
 
 
+
 // Daisy quiz
 $('#daisy-quiz').quiz({
     
@@ -262,6 +233,7 @@ $('#daisy-quiz').quiz({
     }
   ]
 });
+
 
 
 // Goofy quiz

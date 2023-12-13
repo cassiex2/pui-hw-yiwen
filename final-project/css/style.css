@@ -192,6 +192,7 @@ svg {
 
 
 /* Timeline */
+
 main {
     background-color: #F6EFD6;
     height: auto;
@@ -320,15 +321,18 @@ main h1 {
     letter-spacing: -0.6px;
     text-align: left;
 }
+
   
-/* Animations */
+/* Animations for fadein */
+
 .js--fadeInLeft {
     opacity: 0;
     transform: translateX(-50px);
     transition: all 1s ease-out;
 }
   
-/* Add a line */
+/* Add Main Timeline */
+
 .mickey-timeline::before, .daisy-timeline::before, .goofy-timeline::before {
     content: '';
     position: absolute;
@@ -343,7 +347,7 @@ main h1 {
   
 
 
-/* progress bar */
+/* Progress Bar */
 
 .bar-container {
     height: 10vh;
@@ -368,6 +372,7 @@ main h1 {
     color: #111;
     font-family: 'Fira Code', monospace;
 }
+
 .progressbar li:before {
     width: 30px;
     height: 30px;
@@ -393,23 +398,26 @@ main h1 {
     z-index: 1;
     transition: all .8s;
 }
+
 .progressbar li:first-child:after {
     content: none;
 }
+
 .progressbar li.active:before {
     border-color: #F3CC64;
     background-color: #F3CC64;
     transition: all .8s;
 }
+
 .progressbar li.active:after {
     background-color: #F3CC64;
     transition: all .8s;
 }
 
-/* quiz */
+/* Trivia Quiz */
 
 .trivia-quiz {
-    height: 80vh;
+    height: 88vh;
     margin-top: 5rem;
 }
 
@@ -507,11 +515,12 @@ main h1 {
 
 .quiz-results-state #quiz-buttons a{
     background:#333;
-    color:#fff}
+    color:#fff
+}
 
 
 
-/* back to top button */
+/* Back to top button */
 
 .back-to-top {
     text-align: right;
